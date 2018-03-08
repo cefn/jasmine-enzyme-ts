@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/N/A.git"
+    "url": "git@github.com:medington/jasmine-enzyme-ts.git"
   },
   "author": "medington",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/N/A/issues"
+    "url": "https://github.com/FormidableLabs/enzyme-matchers/issues/222"
   },
   "homepage": "https://github.com/N/A#readme",
   "dependencies": {
