@@ -3,8 +3,8 @@ import * as ReactDOM from "react-dom";
 import * as TestUtils from "react-dom/test-utils";
 import * as Enzyme from "enzyme";
 import * as Adapter from "enzyme-adapter-react-16";
-// import jasmineEnzyme from "jasmine-enzyme";
-//
+import jasmineEnzyme from "jasmine-enzyme";
+
 Enzyme.configure({ adapter: new Adapter() });
 
 
@@ -30,9 +30,9 @@ describe('Jasmine/Enzyme Sanity Tests', () => {
     expect(hello.text()).toEqual('hello');
   });
 
-  // it('says hello via mount with matcher', () => {
-  //   jasmineEnzyme();
-  //   const hello = Enzyme.mount(<Hello/>);
-  //   expect(hello.text()).toHaveText('hello');
-  // });
+  it('says hello via mount with matcher', () => {
+    jasmineEnzyme();
+    const hello = Enzyme.mount(<Hello/>);
+    expect(hello.text()).toHaveText('hello');
+  });
 });
