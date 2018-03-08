@@ -17,19 +17,26 @@
   },
   "homepage": "https://github.com/N/A#readme",
   "dependencies": {
+    "@types/enzyme": "^3.1.9",
+    "@types/enzyme-adapter-react-16": "^1.0.2",
     "@types/jasmine": "^2.8.6",
     "@types/react": "^16.0.40",
     "@types/react-dom": "^16.0.4",
+    "@types/react-test-renderer": "^16.0.1",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "jasmine-core": "^3.1.0",
     "karma": "^2.0.0",
+    "karma-jasmine": "^1.1.1",
     "karma-chrome-launcher": "^2.2.0",
     "karma-spec-reporter": "0.0.32",
     "karma-webpack": "^2.0.13",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-test-renderer": "^16.2.0",
     "ts-loader": "^4.0.1",
     "typescript": "^2.7.2",
     "uglifyjs-webpack-plugin": "^1.2.2",
@@ -38,6 +45,5 @@
     "webpack-dev-server": "^3.1.0"
   },
   "devDependencies": {
-    "karma-jasmine": "^1.1.1"
   }
 }
