@@ -1,0 +1,43 @@
+{
+  "name": "jasmine-enzyme-ts",
+  "version": "1.0.0",
+  "description": "Test project for jasmine-enzyme issue with Typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N/A.git"
+  },
+  "author": "medington",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/N/A/issues"
+  },
+  "homepage": "https://github.com/N/A#readme",
+  "dependencies": {
+    "@types/jasmine": "^2.8.6",
+    "@types/react": "^16.0.40",
+    "@types/react-dom": "^16.0.4",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "jasmine-core": "^3.1.0",
+    "karma": "^2.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-spec-reporter": "0.0.32",
+    "karma-webpack": "^2.0.13",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "ts-loader": "^4.0.1",
+    "typescript": "^2.7.2",
+    "uglifyjs-webpack-plugin": "^1.2.2",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.10",
+    "webpack-dev-server": "^3.1.0"
+  },
+  "devDependencies": {
+    "karma-jasmine": "^1.1.1"
+  }
+}
