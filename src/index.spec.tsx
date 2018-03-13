@@ -2,7 +2,9 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import * as TestUtils from "react-dom/test-utils";
 import * as Enzyme from "enzyme";
-import * as Adapter from "enzyme-adapter-react-16";
+// See the note in the tsconfig.json file about this import
+// import * as Adapter from "enzyme-adapter-react-16";
+import Adapter = require("enzyme-adapter-react-16");
 import jasmineEnzyme from "jasmine-enzyme";
 
 Enzyme.configure({ adapter: new Adapter() });
@@ -16,7 +18,7 @@ class Hello extends React.Component<undefined, undefined> {
 
 describe('Jasmine/Enzyme Sanity Tests', () => {
   beforeEach(() => {
-    // jasmineEnzyme();
+    jasmineEnzyme();
   });
 
   it('says hello via renderIntoDocument', () => {
@@ -33,6 +35,6 @@ describe('Jasmine/Enzyme Sanity Tests', () => {
   it('says hello via mount with matcher', () => {
     jasmineEnzyme();
     const hello = Enzyme.mount(<Hello/>);
-    expect(hello.text()).toHaveText('hello');
+    expect(hello).toHaveText('hello');
   });
 });
