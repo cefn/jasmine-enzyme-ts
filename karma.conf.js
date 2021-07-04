@@ -10,6 +10,7 @@ module.exports = function (config) {
       require("karma-jasmine"),
       require("karma-webpack"),
       require("karma-chrome-launcher"),
+      require("karma-jsdom-launcher"),
       require("karma-spec-reporter"),
     ],
     frameworks: ["jasmine"],
@@ -28,7 +29,7 @@ module.exports = function (config) {
     colors: true,
     // logLevel: config.LOG_DEBUG,
     autoWatch: true,
-    browsers: ["Chrome"],
+    browsers: ["Chrome", "jsdom"],
     singleRun: true,
     concurrency: Infinity,
   });
